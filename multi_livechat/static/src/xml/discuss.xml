@@ -2,11 +2,11 @@
 <template>
     <t t-extend="mail.discuss.SidebarChannels">
         <t t-jquery="t[t-call='mail.discuss.SidebarItems']:last" t-operation="after">
-            <t t-set="type" t-value="'multi_user_channel'" />
             <t
                 t-foreach="options.getGroupedMultiLivechatChannels(channels)"
                 t-as="livechat_group"
             >
+                <t t-set="type" t-value="'multi_user_channel'" />
                 <t t-if="livechat_group.chats &amp;&amp; livechat_group.chats.length">
                     <t t-call="mail.discuss.SidebarTitle">
                         <t
