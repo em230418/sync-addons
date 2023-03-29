@@ -21,7 +21,7 @@
     "data": [
         "security/openapi_security.xml",
         "security/ir.model.access.csv",
-        "security/res_users_token.xml",
+        # "security/res_users_token.xml",
         "views/openapi_view.xml",
         "views/res_users_view.xml",
         "views/ir_model_view.xml",
